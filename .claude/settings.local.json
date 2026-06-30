@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:motionsites.ai)",
+      "Bash(node -e \"console.log\\(require\\('lenis/package.json'\\).version\\)\")",
+      "Bash(node -e \"const p = require\\('fs'\\).readFileSync\\('node_modules/lenis/package.json','utf8'\\); const j = JSON.parse\\(p\\); console.log\\('version:', j.version\\); console.log\\('exports:', JSON.stringify\\(j.exports, null, 2\\)\\); console.log\\('main:', j.main\\); console.log\\('module:', j.module\\);\")"
+    ]
+  }
+}

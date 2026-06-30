@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glow-subtle" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <radialGradient id="bgGrad" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#F0F4FF" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </radialGradient>
+    <radialGradient id="nodeGrad" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#60A5FA" stop-opacity="1" />
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="1" />
+    </radialGradient>
+    <linearGradient id="spineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="40%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0.6" />
+    </linearGradient>
+    <linearGradient id="bowlGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="200" rx="32" fill="url(#bgGrad)" />
+
+  <!-- ===== LOGO SYMBOL (scaled from 512x512) ===== -->
+  <g transform="translate(30, 26) scale(0.29)">
+    <!-- Flow path -->
+    <path d="M 195 87 Q 265 80 340 120 T 378 195 T 345 280 T 245 310 L 195 235 L 195 365 L 195 442"
+          fill="none" stroke="#60A5FA" stroke-width="1.5" stroke-dasharray="3 8" opacity="0.3" />
+
+    <!-- Connection lines -->
+    <g stroke-linecap="round" stroke-linejoin="round">
+      <line x1="195" y1="123" x2="195" y2="235" stroke="url(#spineGrad)" stroke-width="5" filter="url(#glow-subtle)" />
+      <line x1="195" y1="235" x2="195" y2="365" stroke="#3B82F6" stroke-width="4" />
+      <line x1="195" y1="365" x2="195" y2="430" stroke="#2563EB" stroke-width="3" opacity="0.6" />
+      <line x1="195" y1="105" x2="260" y2="95" stroke="url(#bowlGrad)" stroke-width="3" />
+      <line x1="260" y1="95" x2="330" y2="125" stroke="#3B82F6" stroke-width="3" />
+      <line x1="330" y1="125" x2="370" y2="195" stroke="#3B82F6" stroke-width="3" />
+      <line x1="370" y1="195" x2="355" y2="270" stroke="#3B82F6" stroke-width="3" />
+      <line x1="355" y1="270" x2="300" y2="315" stroke="#3B82F6" stroke-width="2.5" />
+      <line x1="300" y1="315" x2="245" y2="300" stroke="#3B82F6" stroke-width="2.5" />
+      <line x1="245" y1="300" x2="195" y2="235" stroke="#3B82F6" stroke-width="2.5" />
+      <line x1="195" y1="235" x2="125" y2="165" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.35" />
+      <line x1="330" y1="125" x2="415" y2="165" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.35" />
+      <line x1="195" y1="365" x2="135" y2="330" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.35" />
+      <line x1="300" y1="315" x2="285" y2="415" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.35" />
+      <line x1="260" y1="95" x2="350" y2="75" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="4 5" opacity="0.35" />
+      <line x1="370" y1="195" x2="415" y2="165" stroke="#3B82F6" stroke-width="1" stroke-dasharray="2 6" opacity="0.25" />
+      <line x1="125" y1="165" x2="135" y2="330" stroke="#3B82F6" stroke-width="1" stroke-dasharray="2 6" opacity="0.2" />
+      <line x1="245" y1="300" x2="285" y2="415" stroke="#3B82F6" stroke-width="1" stroke-dasharray="2 6" opacity="0.2" />
+    </g>
+
+    <!-- Spine nodes -->
+    <circle cx="195" cy="105" r="18" fill="url(#nodeGrad)" filter="url(#glow)" />
+    <circle cx="195" cy="105" r="5" fill="#ffffff" opacity="0.3" />
+    <circle cx="195" cy="235" r="18" fill="url(#nodeGrad)" filter="url(#glow)" />
+    <circle cx="195" cy="235" r="5" fill="#ffffff" opacity="0.25" />
+    <circle cx="195" cy="365" r="15" fill="#3B82F6" filter="url(#glow-subtle)" />
+    <circle cx="195" cy="430" r="12" fill="#2563EB" opacity="0.7" />
+
+    <!-- Bowl nodes -->
+    <circle cx="260" cy="95" r="13" fill="url(#nodeGrad)" filter="url(#glow-subtle)" />
+    <circle cx="260" cy="95" r="3.5" fill="#ffffff" opacity="0.2" />
+    <circle cx="330" cy="125" r="13" fill="url(#nodeGrad)" filter="url(#glow-subtle)" />
+    <circle cx="330" cy="125" r="3.5" fill="#ffffff" opacity="0.2" />
+    <circle cx="370" cy="195" r="13" fill="url(#nodeGrad)" />
+    <circle cx="370" cy="195" r="3.5" fill="#ffffff" opacity="0.15" />
+    <circle cx="355" cy="270" r="13" fill="#3B82F6" />
+    <circle cx="300" cy="315" r="11" fill="#3B82F6" opacity="0.85" />
+    <circle cx="245" cy="300" r="11" fill="#3B82F6" opacity="0.85" />
+
+    <!-- Satellite nodes -->
+    <circle cx="125" cy="165" r="5" fill="none" stroke="#3B82F6" stroke-width="2" opacity="0.5" />
+    <circle cx="125" cy="165" r="2" fill="#60A5FA" opacity="0.3" />
+    <circle cx="415" cy="165" r="5" fill="none" stroke="#3B82F6" stroke-width="2" opacity="0.5" />
+    <circle cx="415" cy="165" r="2" fill="#60A5FA" opacity="0.3" />
+    <circle cx="135" cy="330" r="5" fill="none" stroke="#3B82F6" stroke-width="2" opacity="0.5" />
+    <circle cx="135" cy="330" r="2" fill="#60A5FA" opacity="0.3" />
+    <circle cx="285" cy="415" r="5" fill="none" stroke="#3B82F6" stroke-width="2" opacity="0.5" />
+    <circle cx="285" cy="415" r="2" fill="#60A5FA" opacity="0.3" />
+    <circle cx="350" cy="75" r="4" fill="none" stroke="#60A5FA" stroke-width="1.5" opacity="0.4" />
+
+    <!-- Accent dots -->
+    <circle cx="160" cy="130" r="3" fill="#60A5FA" opacity="0.25" />
+    <circle cx="230" cy="155" r="3" fill="#60A5FA" opacity="0.25" />
+    <circle cx="395" cy="235" r="3" fill="#60A5FA" opacity="0.25" />
+    <circle cx="220" cy="395" r="3" fill="#60A5FA" opacity="0.25" />
+    <circle cx="155" cy="380" r="2" fill="#60A5FA" opacity="0.2" />
+    <circle cx="340" cy="345" r="2.5" fill="#60A5FA" opacity="0.2" />
+  </g>
+
+  <!-- ===== WORDMARK ===== -->
+  <text x="225" y="108" font-family="'Space Grotesk', 'Inter', 'Satoshi', sans-serif" font-size="64" font-weight="700" fill="#0B1020" letter-spacing="6">
+    PATHIVO
+  </text>
+
+  <!-- Tagline -->
+  <text x="227" y="145" font-family="'Inter', 'Space Grotesk', sans-serif" font-size="13" font-weight="400" fill="#3B82F6" letter-spacing="4" opacity="0.8">
+    THINK WITH STRUCTURE. EXECUTE WITH CLARITY.
+  </text>
+</svg>
