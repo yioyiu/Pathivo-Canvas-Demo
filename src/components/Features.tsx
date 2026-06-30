@@ -3,6 +3,7 @@ import { useScrollReveal, fadeUpVariants, staggerContainerVariants } from '@/hoo
 import { features } from '@/data/content';
 import GlassCard from '@/components/ui/GlassCard';
 import TiltCard from '@/components/ui/TiltCard';
+import VideoShowcase from '@/components/VideoShowcase';
 
 export default function Features() {
   const { ref, controls } = useScrollReveal();
@@ -18,7 +19,7 @@ export default function Features() {
           variants={fadeUpVariants}
           initial="hidden"
           animate={controls}
-          className="text-center mb-16 lg:mb-20"
+          className="text-center mb-12 lg:mb-14"
         >
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass text-blue-300 text-xs font-medium mb-6">
             核心能力
@@ -30,6 +31,9 @@ export default function Features() {
             从节点到连线，从进度到洞察 — Pathivo 提供完整的结构化任务管理能力
           </p>
         </motion.div>
+
+        {/* Product demo video */}
+        <VideoShowcase />
 
         <motion.div
           variants={staggerContainerVariants}

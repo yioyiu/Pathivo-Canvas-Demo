@@ -52,6 +52,13 @@ export const problemSolution = {
   },
 };
 
+export const videoShowcase = {
+  badge: '产品演示',
+  title: '一分钟了解 Pathivo',
+  subtitle: '从创建画布到完成追踪 — 看 Pathivo 如何帮你把模糊想法变成清晰蓝图',
+  tags: ['节点画布', '语义化连线', '进度追踪', '多视图切换'],
+};
+
 export const features = [
   {
     title: '节点画布',

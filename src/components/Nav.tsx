@@ -26,7 +26,7 @@ export default function Nav() {
       <nav className="section-container flex items-center justify-between h-16 lg:h-20">
         {/* Logo */}
         <a href="#" className="flex items-center gap-3 group">
-          <img src="/logo.svg" alt="Pathivo" className="w-8 h-8 lg:w-9 lg:h-9" />
+          <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Pathivo" className="w-8 h-8 lg:w-9 lg:h-9" />
           <span className="font-display font-bold text-lg tracking-wider text-white">
             PATHIVO
           </span>

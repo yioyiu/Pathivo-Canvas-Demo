@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <a href="#" className="flex items-center gap-3 mb-4">
-              <img src="/logo.svg" alt="Pathivo" className="w-8 h-8" />
+              <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Pathivo" className="w-8 h-8" />
               <span className="font-display font-bold text-lg tracking-wider text-white">
                 PATHIVO
               </span>
@@ -73,7 +73,7 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" className="hover:text-white/50 transition-colors">{siteConfig.icp.beian}</a>
             <a href="http://www.beian.gov.cn/" target="_blank" rel="noopener noreferrer" className="hover:text-white/50 transition-colors flex items-center gap-1">
-              <img src="/beian-mps-icon.png" alt="" className="w-4 h-4 inline" />
+              <img src={`${import.meta.env.BASE_URL}beian-mps-icon.png`} alt="" className="w-4 h-4 inline" />
               {siteConfig.icp.mps}
             </a>
           </div>
