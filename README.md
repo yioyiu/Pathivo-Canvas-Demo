@@ -22,7 +22,8 @@
 </p>
 
 <p align="center">
-  👉 <a href="https://pathivo.cn"><b>pathivo.cn</b></a> — 免费使用，无需注册
+  👉 <a href="https://yioyiu.github.io/Pathivo-Canvas-Demo/"><b>Pathivo官网</b></a> — 浏览官网
+  👉 <a href="https://pathivo.cn"><b>pathivo.cn</b></a> — 免费使用
 </p>
 
 <br/>
