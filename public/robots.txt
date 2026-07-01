@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://pathivo.cn/sitemap.xml
+Sitemap: https://yioyiu.github.io/Pathivo-Canvas-Demo/sitemap.xml
